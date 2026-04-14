@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RCA &#8212; Informe de Causa Ra&#237;z | Abril 2026</title>
+<title>RCA &#8212; Informe Completo de Causa Ra&#237;z | Abril 2026</title>
 <style>
 :root{--bg-primary:#0f1419;--bg-secondary:#1a2332;--bg-card:#1e2a3a;--accent:#00d4aa;--accent-muted:#00a884;--text-primary:#e8edf4;--text-secondary:#8b9cb3;--border:#2d3d52;--success:#00d4aa;--warning:#f0b429;--critical:#e85d75}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -28,67 +28,71 @@ td.num{font-family:Consolas,monospace;font-size:.85rem;color:var(--text-secondar
 .badge{display:inline-block;padding:.2rem .6rem;font-size:.72rem;font-weight:500;border-radius:4px;font-family:Consolas,monospace}
 .highlight{color:var(--accent);font-weight:600}
 .footer{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);font-size:.85rem;color:var(--text-secondary);text-align:center}
-.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-bottom:2rem}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:2rem}
 .kpi{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.25rem;text-align:center}
 .kpi-value{font-size:1.8rem;font-weight:700;font-family:Consolas,monospace;color:var(--accent)}
-.kpi-label{font-size:.8rem;color:var(--text-secondary);margin-top:.25rem}
+.kpi-label{font-size:.78rem;color:var(--text-secondary);margin-top:.25rem}
 .badge-alta{background:rgba(232,93,117,.2);color:var(--critical)}
 .badge-media{background:rgba(240,180,41,.2);color:var(--warning)}
 .badge-baja{background:rgba(0,212,170,.2);color:var(--accent)}
 .cluster{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.75rem;margin-bottom:1.5rem}
 .cluster-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
-.cluster-title{font-size:1.1rem;font-weight:600}
-.cluster h4{font-size:.95rem;font-weight:600;color:var(--accent);margin:1rem 0 .5rem}
-.cluster p,.cluster li{font-size:.9rem;color:var(--text-secondary);line-height:1.7}
+.cluster-title{font-size:1.05rem;font-weight:600}
+.cluster h4{font-size:.92rem;font-weight:600;color:var(--accent);margin:1rem 0 .5rem}
+.cluster p,.cluster li{font-size:.88rem;color:var(--text-secondary);line-height:1.7}
 .cluster ul,.cluster ol{padding-left:1.25rem;margin-bottom:.75rem}
-.tag-list{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
-.tag{display:inline-block;padding:.15rem .5rem;font-size:.72rem;border-radius:4px;font-family:Consolas,monospace;background:rgba(0,212,170,.1);color:var(--accent);border:1px solid rgba(0,212,170,.2)}
-.dep-diagram{background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:1.5rem;font-family:Consolas,monospace;font-size:.8rem;color:var(--text-secondary);white-space:pre;overflow-x:auto;line-height:1.6;margin-bottom:2rem}
+.tag-list{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem}
+.tag{display:inline-block;padding:.12rem .45rem;font-size:.68rem;border-radius:4px;font-family:Consolas,monospace;background:rgba(0,212,170,.1);color:var(--accent);border:1px solid rgba(0,212,170,.2)}
 .priority-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border)}
 .priority-item:last-child{border-bottom:none}
 .prio-num{width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--bg-primary);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0}
-.prio-text{font-size:.9rem;color:var(--text-secondary);line-height:1.6}
+.prio-text{font-size:.88rem;color:var(--text-secondary);line-height:1.6}
 .prio-text strong{color:var(--text-primary)}
-@media(max-width:768px){.container{padding:1rem}th,td{padding:.75rem 1rem;font-size:.85rem}}
+@media(max-width:768px){.container{padding:1rem}th,td{padding:.75rem 1rem;font-size:.82rem}}
 </style>
 </head>
 <body>
 <div class="container">
 
 <header>
-  <h1 class="report-title">Informe de An&#225;lisis de Causa Ra&#237;z (RCA)</h1>
+  <h1 class="report-title">Informe Completo de An&#225;lisis de Causa Ra&#237;z (RCA)</h1>
   <p class="report-subtitle">El Libertador &#8212; Seguro de Arrendamiento &#183; Producto E.O.</p>
-  <span class="report-meta">14 Abril 2026 &#183; 19 incidentes &#183; 8 soluciones</span>
+  <span class="report-meta">14 Abril 2026 &#183; 87 incidentes &#183; 12 soluciones maestras</span>
 </header>
 
 <div class="kpi-row">
-  <div class="kpi"><div class="kpi-value">19</div><div class="kpi-label">Incidentes analizados</div></div>
-  <div class="kpi"><div class="kpi-value">8</div><div class="kpi-label">Soluciones maestras</div></div>
-  <div class="kpi"><div class="kpi-value">3</div><div class="kpi-label">Sistemas afectados</div></div>
-  <div class="kpi"><div class="kpi-value">~11</div><div class="kpi-label">Sprints estimados</div></div>
+  <div class="kpi"><div class="kpi-value">87</div><div class="kpi-label">Incidentes analizados</div></div>
+  <div class="kpi"><div class="kpi-value">12</div><div class="kpi-label">Soluciones maestras</div></div>
+  <div class="kpi"><div class="kpi-value">5</div><div class="kpi-label">Sistemas afectados</div></div>
+  <div class="kpi"><div class="kpi-value">~18</div><div class="kpi-label">Sprints estimados</div></div>
+  <div class="kpi"><div class="kpi-value">73%</div><div class="kpi-label">Resueltos</div></div>
 </div>
 
 <div class="section">
   <h2 class="section-title">Resumen Ejecutivo</h2>
   <div class="summary-box">
-    <p>Se analizaron <strong class="highlight">19 incidentes</strong> del tablero MDSB vinculados al producto El Libertador. El an&#225;lisis agrupa los fallos en <strong class="highlight">8 soluciones maestras</strong> que cubren 3 sistemas principales: <strong>An&#225;lisis Digital</strong> (colas de asignaci&#243;n), <strong>SAI</strong> (pagos y estados de cuenta) y <strong>SIOS</strong> (reporte de siniestros). La soluci&#243;n con mayor impacto es la correcci&#243;n del motor de colas de asignaci&#243;n, que por s&#237; sola resolver&#237;a 7 de los 19 incidentes.</p>
+    <p>Se analizaron <strong class="highlight">87 incidentes</strong> del tablero MDSB. El an&#225;lisis agrupa los fallos en <strong class="highlight">12 soluciones maestras</strong> que cubren 5 sistemas: <strong>SAI</strong> (45 incidentes), <strong>An&#225;lisis Digital</strong> (15), <strong>SIOS</strong> (12), <strong>Facturaci&#243;n Electr&#243;nica</strong> (5) y <strong>Huella</strong> (3). Un bloque significativo (17 tickets) corresponde a problemas de <strong>acceso/infraestructura</strong> (Java, VPN, certificados) que no son errores de l&#243;gica sino de entorno. Las 3 soluciones de mayor impacto cubrir&#237;an el 55% de los incidentes.</p>
   </div>
 </div>
 
 <div class="section">
-  <h2 class="section-title">Tabla de Soluciones</h2>
+  <h2 class="section-title">Tabla de Soluciones Maestras</h2>
   <div class="table-wrapper">
     <table>
       <thead><tr><th>#</th><th>Soluci&#243;n Maestra</th><th>Sistema</th><th>Complejidad</th><th>Esfuerzo</th><th>Inc.</th></tr></thead>
       <tbody>
-        <tr><td class="num">1</td><td>Motor de Colas de Asignaci&#243;n Autom&#225;tica</td><td>An&#225;lisis Digital</td><td><span class="badge badge-alta">Alta</span></td><td>3-4 sprints</td><td class="num">7</td></tr>
-        <tr><td class="num">2</td><td>Validaci&#243;n de Fechas y Par&#225;metros en SIOS</td><td>SIOS</td><td><span class="badge badge-media">Media</span></td><td>2 sprints</td><td class="num">4</td></tr>
-        <tr><td class="num">3</td><td>L&#243;gica de Pagos y Estado de Cuenta</td><td>SAI</td><td><span class="badge badge-alta">Alta</span></td><td>3 sprints</td><td class="num">4</td></tr>
-        <tr><td class="num">4</td><td>Sincronizaci&#243;n de Par&#225;metros entre Sistemas</td><td>SAI / SIOS</td><td><span class="badge badge-media">Media</span></td><td>1-2 sprints</td><td class="num">2</td></tr>
-        <tr><td class="num">5</td><td>Recaudo Autom&#225;tico de Pagos de Estudio</td><td>An&#225;lisis Digital</td><td><span class="badge badge-media">Media</span></td><td>1 sprint</td><td class="num">1</td></tr>
-        <tr><td class="num">6</td><td>Factura Electr&#243;nica bajo demanda</td><td>Facturaci&#243;n</td><td><span class="badge badge-baja">Baja</span></td><td>0.5 sprint</td><td class="num">1</td></tr>
-        <tr><td class="num">7</td><td>Campo SALDO_TDC nulo en BD</td><td>SAI (BD)</td><td><span class="badge badge-baja">Baja</span></td><td>0.5 sprint</td><td class="num">1</td></tr>
-        <tr><td class="num">8</td><td>Error de mensaje en reingreso (2-2-8)</td><td>SAI</td><td><span class="badge badge-baja">Baja</span></td><td>0.5 sprint</td><td class="num">1</td></tr>
+        <tr><td class="num">1</td><td>L&#243;gica de Pagos, Siniestros y Estado de Cuenta</td><td>SAI</td><td><span class="badge badge-alta">Alta</span></td><td>4 sprints</td><td class="num">16</td></tr>
+        <tr><td class="num">2</td><td>Infraestructura de Acceso (Java, VPN, Certificados)</td><td>SAI / Todos</td><td><span class="badge badge-media">Media</span></td><td>2 sprints</td><td class="num">17</td></tr>
+        <tr><td class="num">3</td><td>Motor de Colas de Asignaci&#243;n Autom&#225;tica</td><td>An&#225;lisis Digital</td><td><span class="badge badge-alta">Alta</span></td><td>3 sprints</td><td class="num">8</td></tr>
+        <tr><td class="num">4</td><td>Validaci&#243;n de Fechas en SIOS (Reporte Siniestros)</td><td>SIOS</td><td><span class="badge badge-media">Media</span></td><td>2 sprints</td><td class="num">7</td></tr>
+        <tr><td class="num">5</td><td>Novedades y Cesiones en SAI (opc 2-2-8)</td><td>SAI</td><td><span class="badge badge-media">Media</span></td><td>2 sprints</td><td class="num">6</td></tr>
+        <tr><td class="num">6</td><td>Sincronizaci&#243;n de Par&#225;metros entre Sistemas</td><td>SAI / SIOS</td><td><span class="badge badge-media">Media</span></td><td>2 sprints</td><td class="num">5</td></tr>
+        <tr><td class="num">7</td><td>Facturaci&#243;n Electr&#243;nica (generaci&#243;n y consulta)</td><td>Facturaci&#243;n</td><td><span class="badge badge-media">Media</span></td><td>1 sprint</td><td class="num">5</td></tr>
+        <tr><td class="num">8</td><td>Reversi&#243;n de Terminaci&#243;n/Desocupaci&#243;n (Estado de Cuenta)</td><td>SAI</td><td><span class="badge badge-alta">Alta</span></td><td>2 sprints</td><td class="num">5</td></tr>
+        <tr><td class="num">9</td><td>Consulta Datacr&#233;dito en Vista Analista</td><td>An&#225;lisis Digital</td><td><span class="badge badge-media">Media</span></td><td>1 sprint</td><td class="num">3</td></tr>
+        <tr><td class="num">10</td><td>Fechas y Horas en Reportes Coordinador</td><td>An&#225;lisis Digital</td><td><span class="badge badge-baja">Baja</span></td><td>0.5 sprint</td><td class="num">2</td></tr>
+        <tr><td class="num">11</td><td>Disponibilidad SIOS para Inmobiliarias</td><td>SIOS</td><td><span class="badge badge-media">Media</span></td><td>1 sprint</td><td class="num">5</td></tr>
+        <tr><td class="num">12</td><td>Huella: Pagos y Configuraci&#243;n de Links</td><td>Huella</td><td><span class="badge badge-baja">Baja</span></td><td>0.5 sprint</td><td class="num">3</td></tr>
       </tbody>
     </table>
   </div>
@@ -98,114 +102,191 @@ td.num{font-family:Consolas,monospace;font-size:.85rem;color:var(--text-secondar
   <h2 class="section-title">Detalle por Soluci&#243;n T&#233;cnica</h2>
 
   <div class="cluster">
-    <div class="cluster-header"><span class="cluster-title">1. Motor de Colas de Asignaci&#243;n Autom&#225;tica</span><span class="badge badge-alta">Alta &#183; 3-4 sprints</span></div>
+    <div class="cluster-header"><span class="cluster-title">1. L&#243;gica de Pagos, Siniestros y Estado de Cuenta (SAI)</span><span class="badge badge-alta">Alta &#183; 4 sprints</span></div>
     <h4>Causa Ra&#237;z</h4>
-    <p>Falla sist&#233;mica en el encolamiento de casos en An&#225;lisis Digital:</p>
+    <p>SAI presenta m&#250;ltiples fallos en la l&#243;gica de pagos que comparten una ra&#237;z com&#250;n: el sistema no valida correctamente el estado actual de siniestros/solicitudes antes de ejecutar pagos, y el c&#225;lculo de l&#237;mites de indemnizaci&#243;n es incorrecto.</p>
     <ul>
-      <li><strong>Documentos post-resultado:</strong> El cliente adjunta documentos nuevos (reestudio) pero el sistema no reinserta la solicitud en la cola de asignaci&#243;n. El evento de "nuevo documento" no dispara re-encolamiento porque el estado ya cambi&#243; a "resuelto".</li>
-      <li><strong>Solicitudes nuevas no asignadas:</strong> Solicitudes radicadas entre 3-5 PM no se asignan. El tablero muestra "0 en cola" cuando hay pendientes. Gap en el scheduler o concurrencia.</li>
+      <li><strong>Pagos de siniestros terminados:</strong> Siniestros terminados por pago directo del inquilino siguen generando pagos retroactivos.</li>
+      <li><strong>Pagos post-desocupaci&#243;n:</strong> Solicitudes retiradas siguen generando pagos. La fecha de retiro no se propaga a pagadur&#237;a.</li>
+      <li><strong>L&#237;mite de indemnizaci&#243;n incorrecto:</strong> SAI registra 36 meses cumplidos cuando solo se han pagado 24 meses reales.</li>
+      <li><strong>Doble giro:</strong> Estado de cuenta muestra giro de 2 periodos cuando solo se gir&#243; 1.</li>
+      <li><strong>Amparo integral:</strong> Cobro de prima incorrecto tras cierre mensual; no permite ingreso cuando inquilino fue eliminado.</li>
+      <li><strong>Salvamento no reflejado:</strong> Pagos referenciados no registran salvamento en estado de cuenta.</li>
+      <li><strong>Aumento retroactivo:</strong> No se refleja en liquidaci&#243;n de siniestro.</li>
+      <li><strong>Saneamientos:</strong> Listado 3-2-35 no incluye solicitudes terminadas en d&#237;as 30-31.</li>
     </ul>
     <h4>Acciones Definitivas</h4>
     <ol>
-      <li>Auditar event-listener de documentos: garantizar re-encolamiento tras nuevo documento en solicitud con resultado previo.</li>
-      <li>Reconciliaci&#243;n peri&#243;dica (cada 15 min): solicitudes con documentos nuevos vs. cola.</li>
-      <li>Revisar scheduler de asignaci&#243;n: eliminar gaps temporales.</li>
+      <li>Capa de validaci&#243;n pre-pago: verificar estado siniestro, solicitud, fecha desocupaci&#243;n, pagos previos y l&#237;mite real.</li>
+      <li>Corregir c&#225;lculo de l&#237;mite de indemnizaci&#243;n para contar meses reales pagados vs. registrados.</li>
+      <li>Reconciliaci&#243;n de estados de cuenta para detectar duplicados de giro.</li>
+      <li>Corregir l&#243;gica de amparo integral cuando inquilino es eliminado de solicitud.</li>
+      <li>Incluir d&#237;as 30-31 en listado de saneamientos.</li>
+    </ol>
+    <h4>Incidentes Vinculados (16)</h4>
+    <div class="tag-list"><span class="tag">MDSB-965670</span><span class="tag">MDSB-967818</span><span class="tag">MDSB-962984</span><span class="tag">MDSB-971590</span><span class="tag">MDSB-984126</span><span class="tag">MDSB-988770</span><span class="tag">MDSB-989366</span><span class="tag">MDSB-989385</span><span class="tag">MDSB-990747</span><span class="tag">MDSB-993977</span><span class="tag">MDSB-994202</span><span class="tag">MDSB-995245</span><span class="tag">MDSB-1001761</span><span class="tag">MDSB-1009623</span><span class="tag">MDSB-1013740</span><span class="tag">MDSB-1007117</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">2. Infraestructura de Acceso (Java, VPN, Certificados)</span><span class="badge badge-media">Media &#183; 2 sprints</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>17 incidentes corresponden a problemas de acceso a SAI y otros sistemas causados por: certificados Java caducados o no cargados, problemas de VPN corporativa, sesiones bloqueadas, y ca&#237;das de servicio post-despliegue. No son errores de l&#243;gica de negocio sino de entorno.</p>
+    <h4>Acciones Definitivas</h4>
+    <ol>
+      <li>Automatizar renovaci&#243;n de certificados Java para SAI.</li>
+      <li>Documentar procedimiento de autoservicio para problemas de VPN/Java en N1.</li>
+      <li>Implementar health-check post-despliegue que valide acceso a todos los m&#243;dulos.</li>
+      <li>Migrar SAI Web a arquitectura que no dependa de Java client-side.</li>
+    </ol>
+    <h4>Incidentes Vinculados (17)</h4>
+    <div class="tag-list"><span class="tag">MDSB-983729</span><span class="tag">MDSB-983848</span><span class="tag">MDSB-984081</span><span class="tag">MDSB-984084</span><span class="tag">MDSB-984085</span><span class="tag">MDSB-984087</span><span class="tag">MDSB-984089</span><span class="tag">MDSB-984092</span><span class="tag">MDSB-984096</span><span class="tag">MDSB-984104</span><span class="tag">MDSB-984109</span><span class="tag">MDSB-984837</span><span class="tag">MDSB-987086</span><span class="tag">MDSB-987504</span><span class="tag">MDSB-992264</span><span class="tag">MDSB-992486</span><span class="tag">MDSB-994005</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">3. Motor de Colas de Asignaci&#243;n Autom&#225;tica</span><span class="badge badge-alta">Alta &#183; 3 sprints</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>El sistema de asignaci&#243;n autom&#225;tica en An&#225;lisis Digital no reinserta solicitudes en la cola cuando se adjuntan documentos nuevos post-resultado. Tambi&#233;n hay gaps temporales donde el scheduler no asigna solicitudes radicadas en ciertos horarios. La vista del coordinador muestra datos inconsistentes.</p>
+    <h4>Acciones Definitivas</h4>
+    <ol>
+      <li>Auditar event-listener de documentos: garantizar re-encolamiento.</li>
+      <li>Reconciliaci&#243;n peri&#243;dica (cada 15 min).</li>
+      <li>Eliminar gaps en el scheduler de asignaci&#243;n.</li>
       <li>Dashboard de monitoreo con alertas (&gt;30 min sin asignaci&#243;n).</li>
-      <li>Logging estructurado en flujo de encolamiento.</li>
     </ol>
-    <h4>Incidentes Vinculados</h4>
-    <div class="tag-list"><span class="tag">MDSB-671048</span><span class="tag">MDSB-841578</span><span class="tag">MDSB-948474</span><span class="tag">MDSB-988946</span><span class="tag">MDSB-989979</span><span class="tag">MDSB-1018546</span><span class="tag">GD933-73</span></div>
+    <h4>Incidentes Vinculados (8)</h4>
+    <div class="tag-list"><span class="tag">MDSB-961388</span><span class="tag">MDSB-967398</span><span class="tag">MDSB-984409</span><span class="tag">MDSB-988946</span><span class="tag">MDSB-989979</span><span class="tag">MDSB-996715</span><span class="tag">MDSB-996723</span><span class="tag">MDSB-997593</span></div>
   </div>
 
   <div class="cluster">
-    <div class="cluster-header"><span class="cluster-title">2. Validaci&#243;n de Fechas y Par&#225;metros en SIOS</span><span class="badge badge-media">Media &#183; 2 sprints</span></div>
+    <div class="cluster-header"><span class="cluster-title">4. Validaci&#243;n de Fechas en SIOS</span><span class="badge badge-media">Media &#183; 2 sprints</span></div>
     <h4>Causa Ra&#237;z</h4>
-    <p>SIOS falla con fechas de mora en d&#237;as 29-31. No reconoce meses con menos de 31 d&#237;as. Modificar fechas del per&#237;odo de facturaci&#243;n genera error. Workaround actual ("no cambiar fechas") no es aceptable.</p>
-    <p><strong>Evidencia:</strong> MDSB-994207 referencia MDSB-756762 (cerrado, problema reapareci&#243;). MDSB-1017941 confirma que el fix de febrero no funcion&#243;.</p>
+    <p>SIOS falla al reportar siniestros con fechas de mora en d&#237;as 29-31 y con fechas fraccionadas. No reconoce meses con menos de 31 d&#237;as. Modificar fechas del per&#237;odo de facturaci&#243;n genera error. Problema recurrente: MDSB-756762 fue cerrado pero reapareci&#243;.</p>
     <h4>Acciones Definitivas</h4>
     <ol>
-      <li>Refactorizar l&#243;gica de fechas de mora con librer&#237;a robusta (28/29/30/31 d&#237;as).</li>
-      <li>Corregir validaci&#243;n de per&#237;odos de facturaci&#243;n.</li>
-      <li>Tests unitarios parametrizados para edge cases de fechas.</li>
-      <li>Test de regresi&#243;n automatizado para d&#237;as 28-31.</li>
+      <li>Refactorizar l&#243;gica de fechas de mora con librer&#237;a robusta.</li>
+      <li>Tests parametrizados para edge cases (28/29/30/31, bisiestos).</li>
+      <li>Test de regresi&#243;n automatizado.</li>
     </ol>
-    <h4>Incidentes Vinculados</h4>
-    <div class="tag-list"><span class="tag">MDSB-994207</span><span class="tag">MDSB-999067</span><span class="tag">MDSB-1017941</span><span class="tag">GD933-2617</span></div>
+    <h4>Incidentes Vinculados (7)</h4>
+    <div class="tag-list"><span class="tag">MDSB-955818</span><span class="tag">MDSB-972482</span><span class="tag">MDSB-994207</span><span class="tag">MDSB-999067</span><span class="tag">MDSB-973494</span><span class="tag">MDSB-964557</span><span class="tag">MDSB-959695</span></div>
   </div>
 
   <div class="cluster">
-    <div class="cluster-header"><span class="cluster-title">3. L&#243;gica de Pagos y Estado de Cuenta en SAI</span><span class="badge badge-alta">Alta &#183; 3 sprints</span></div>
+    <div class="cluster-header"><span class="cluster-title">5. Novedades y Cesiones en SAI (opc 2-2-8)</span><span class="badge badge-media">Media &#183; 2 sprints</span></div>
     <h4>Causa Ra&#237;z</h4>
-    <p>SAI no valida el estado del siniestro/solicitud antes de ejecutar pagos:</p>
-    <ul>
-      <li><strong>Pagos de siniestros terminados:</strong> No se marcan como "no elegible para pago futuro". Paga retroactivamente montos anteriores.</li>
-      <li><strong>Pagos post-desocupaci&#243;n:</strong> Solicitudes retiradas siguen generando pagos. Fecha de retiro no se propaga a pagadur&#237;a.</li>
-      <li><strong>Doble indemnizaci&#243;n:</strong> Dos giros por el mismo valor en fechas cercanas.</li>
-      <li><strong>Inconsistencia post-reversi&#243;n:</strong> Estado de cuenta no se recalcula al revertir desocupaci&#243;n.</li>
-    </ul>
+    <p>La opci&#243;n 2-2-8 de SAI presenta errores al realizar cesiones, retiros y reingresos. Muestra mensajes de error aunque la operaci&#243;n se ejecuta. No permite cesiones en solicitudes retiradas en siniestro. Error ORA-01403 al intentar retiros.</p>
     <h4>Acciones Definitivas</h4>
     <ol>
-      <li>Validaci&#243;n pre-pago: estado siniestro, solicitud, fecha desocupaci&#243;n, pagos previos.</li>
-      <li>Reconciliaci&#243;n de estados de cuenta para detectar duplicados.</li>
-      <li>Refactorizar reversi&#243;n de desocupaci&#243;n para recalcular estado completo.</li>
-      <li>Constraints en BD para prevenir giros duplicados.</li>
+      <li>Corregir manejo de respuestas HTTP en operaciones de novedades.</li>
+      <li>Permitir cesiones en solicitudes retiradas que est&#233;n en siniestro.</li>
+      <li>Corregir query que genera ORA-01403 en retiros.</li>
     </ol>
-    <h4>Incidentes Vinculados</h4>
-    <div class="tag-list"><span class="tag">MDSB-950509</span><span class="tag">MDSB-965670</span><span class="tag">MDSB-1013740</span><span class="tag">MDSB-1016660</span></div>
+    <h4>Incidentes Vinculados (6)</h4>
+    <div class="tag-list"><span class="tag">MDSB-973722</span><span class="tag">MDSB-964998</span><span class="tag">MDSB-964890</span><span class="tag">MDSB-963015</span><span class="tag">MDSB-965913</span><span class="tag">MDSB-1009594</span></div>
   </div>
 
   <div class="cluster">
-    <div class="cluster-header"><span class="cluster-title">4. Sincronizaci&#243;n de Par&#225;metros entre Sistemas</span><span class="badge badge-media">Media &#183; 1-2 sprints</span></div>
+    <div class="cluster-header"><span class="cluster-title">6. Sincronizaci&#243;n de Par&#225;metros entre Sistemas</span><span class="badge badge-media">Media &#183; 2 sprints</span></div>
     <h4>Causa Ra&#237;z</h4>
-    <p>Par&#225;metros de negocio (montos m&#225;ximos, l&#237;mites de indemnizaci&#243;n) se actualizan en un sistema pero no se propagan a los downstream.</p>
+    <p>Par&#225;metros de negocio (montos m&#225;ximos, l&#237;mites, aumentos 35%, c&#225;nones 20M) se actualizan en un sistema pero no se propagan. Cambios de pagador/deudor en SAI no sincronizan con Huella ni facturaci&#243;n electr&#243;nica.</p>
     <h4>Acciones Definitivas</h4>
     <ol>
       <li>Centralizar par&#225;metros en fuente de verdad &#250;nica.</li>
       <li>Propagaci&#243;n con confirmaci&#243;n de recepci&#243;n.</li>
-      <li>Job de reconciliaci&#243;n entre sistemas.</li>
+      <li>Job de reconciliaci&#243;n entre SAI, SIOS y Huella.</li>
     </ol>
-    <h4>Incidentes Vinculados</h4>
-    <div class="tag-list"><span class="tag">MDSB-986900</span><span class="tag">MDSB-1018273</span></div>
+    <h4>Incidentes Vinculados (5)</h4>
+    <div class="tag-list"><span class="tag">MDSB-958067</span><span class="tag">MDSB-986900</span><span class="tag">MDSB-973633</span><span class="tag">MDSB-981047</span><span class="tag">MDSB-971678</span></div>
   </div>
 
   <div class="cluster">
-    <div class="cluster-header"><span class="cluster-title">5-8. Quick Wins</span><span class="badge badge-baja">Baja-Media &#183; 2.5 sprints</span></div>
-    <h4>5. Recaudo Autom&#225;tico de Pagos de Estudio</h4>
-    <p>Solicitudes digitales no ejecutan recaudo autom&#225;tico. Auditar flujo e implementar conciliaci&#243;n diaria.</p>
-    <div class="tag-list"><span class="tag">MDSB-1018104</span></div>
-    <h4>6. Factura Electr&#243;nica bajo demanda</h4>
-    <p>No existe mecanismo self-service para re-emisi&#243;n. Implementar en portal o documentar para N1.</p>
-    <div class="tag-list"><span class="tag">MDSB-1007351</span></div>
-    <h4>7. Campo SALDO_TDC nulo en BD</h4>
-    <p>Campo SALDO_TDC de ADMSISA.AEW_VARIABLES_HDC nulo desde la fuente. Corregir ETL.</p>
-    <div class="tag-list"><span class="tag">MDSB-1018234</span></div>
-    <h4>8. Error de mensaje en reingreso SAI (2-2-8)</h4>
-    <p>Muestra error pero la operaci&#243;n s&#237; se ejecuta. Corregir response HTTP o manejo de errores en frontend.</p>
-    <div class="tag-list"><span class="tag">MDSB-973722</span></div>
+    <div class="cluster-header"><span class="cluster-title">7. Facturaci&#243;n Electr&#243;nica</span><span class="badge badge-media">Media &#183; 1 sprint</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>No existe mecanismo self-service para consultar/re-emitir facturas electr&#243;nicas. Cada solicitud genera un ticket. Algunas facturas no se registran en centro financiero.</p>
+    <h4>Acciones Definitivas</h4>
+    <ol>
+      <li>Implementar consulta y re-emisi&#243;n de facturas en portal.</li>
+      <li>Validar registro autom&#225;tico en centro financiero post-emisi&#243;n.</li>
+    </ol>
+    <h4>Incidentes Vinculados (5)</h4>
+    <div class="tag-list"><span class="tag">MDSB-964164</span><span class="tag">MDSB-964287</span><span class="tag">MDSB-1007351</span><span class="tag">MDSB-962020</span><span class="tag">MDSB-965782</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">8. Reversi&#243;n de Terminaci&#243;n/Desocupaci&#243;n</span><span class="badge badge-alta">Alta &#183; 2 sprints</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>Al revertir una terminaci&#243;n o desocupaci&#243;n, el estado de cuenta no se recalcula correctamente. Descuentos TD DEV persisten, siniestros quedan suspendidos sin programar liquidaci&#243;n, y el sistema no restaura el estado previo completo.</p>
+    <h4>Acciones Definitivas</h4>
+    <ol>
+      <li>Refactorizar m&#243;dulo de reversi&#243;n para recalcular estado de cuenta completo.</li>
+      <li>Eliminar descuentos hu&#233;rfanos tras reversi&#243;n.</li>
+      <li>Reprogramar liquidaciones de siniestros suspendidos.</li>
+    </ol>
+    <h4>Incidentes Vinculados (5)</h4>
+    <div class="tag-list"><span class="tag">MDSB-992338</span><span class="tag">MDSB-1004389</span><span class="tag">MDSB-959030</span><span class="tag">MDSB-964043</span><span class="tag">MDSB-1013469</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">9. Consulta Datacr&#233;dito en Vista Analista</span><span class="badge badge-media">Media &#183; 1 sprint</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>La consulta autom&#225;tica de Datacr&#233;dito falla para inquilinos en ciertas solicitudes. El sistema no trae la informaci&#243;n y los analistas deben consultar manualmente. Casos negados por centrales de riesgo sin datacr&#233;dito cargado.</p>
+    <h4>Incidentes Vinculados (3)</h4>
+    <div class="tag-list"><span class="tag">MDSB-965107</span><span class="tag">MDSB-981403</span><span class="tag">MDSB-992871</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">10. Fechas y Horas en Reportes Coordinador</span><span class="badge badge-baja">Baja &#183; 0.5 sprint</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>Los reportes descargados desde el dashboard del coordinador muestran fechas/horas incorrectas (todas a las 12:00 AM o 19:00). Problema de timezone en la capa de presentaci&#243;n.</p>
+    <h4>Incidentes Vinculados (2)</h4>
+    <div class="tag-list"><span class="tag">MDSB-961388</span><span class="tag">MDSB-988172</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">11. Disponibilidad SIOS para Inmobiliarias</span><span class="badge badge-media">Media &#183; 1 sprint</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>SIOS presenta ca&#237;das intermitentes para inmobiliarias: p&#225;gina en blanco, &#237;cono no visible en portal, m&#243;dulos no habilitados post-despliegue. Afecta m&#250;ltiples usuarios simult&#225;neamente.</p>
+    <h4>Incidentes Vinculados (5)</h4>
+    <div class="tag-list"><span class="tag">MDSB-984032</span><span class="tag">MDSB-987809</span><span class="tag">MDSB-987810</span><span class="tag">MDSB-988042</span><span class="tag">MDSB-996790</span></div>
+  </div>
+
+  <div class="cluster">
+    <div class="cluster-header"><span class="cluster-title">12. Huella: Pagos y Configuraci&#243;n</span><span class="badge badge-baja">Baja &#183; 0.5 sprint</span></div>
+    <h4>Causa Ra&#237;z</h4>
+    <p>Pagos con fecha 31/12 quedan en estado LIQUIDACI&#211;N aunque ya fueron procesados. Error de configuraci&#243;n en generaci&#243;n de links de reintegros/recibos.</p>
+    <h4>Incidentes Vinculados (3)</h4>
+    <div class="tag-list"><span class="tag">MDSB-958307</span><span class="tag">MDSB-1010293</span><span class="tag">MDSB-995110</span></div>
   </div>
 </div>
 
 <div class="section">
-  <h2 class="section-title">Mapa de Dependencias</h2>
-  <div class="dep-diagram">Analisis Digital -----> SAI -----> SIOS
-(Colas/Asignacion)      (Pagos)      (Siniestros)
-7 incidentes            4 incidentes  4 incidentes
-       |                   |              |
-       +--------+----------+              |
-                |                          |
-          Parametros  <--------------------+
-          Compartidos
-          2 incidentes</div>
+  <h2 class="section-title">Distribuci&#243;n por Sistema</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead><tr><th>Sistema</th><th>Incidentes</th><th>% del Total</th><th>Soluciones Asociadas</th></tr></thead>
+      <tbody>
+        <tr><td>SAI</td><td class="num">45</td><td class="num">52%</td><td>1, 2, 5, 6, 8</td></tr>
+        <tr><td>An&#225;lisis Digital</td><td class="num">15</td><td class="num">17%</td><td>3, 9, 10</td></tr>
+        <tr><td>SIOS</td><td class="num">12</td><td class="num">14%</td><td>4, 11</td></tr>
+        <tr><td>Facturaci&#243;n Electr&#243;nica</td><td class="num">5</td><td class="num">6%</td><td>7</td></tr>
+        <tr><td>Huella</td><td class="num">3</td><td class="num">3%</td><td>12</td></tr>
+        <tr><td>Otros (VPN, navegador)</td><td class="num">7</td><td class="num">8%</td><td>2</td></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <div class="section">
   <h2 class="section-title">Priorizaci&#243;n Recomendada</h2>
   <div>
-    <div class="priority-item"><span class="prio-num">1</span><div class="prio-text"><strong>Colas de Asignaci&#243;n</strong> &#8212; 7 incidentes, impacto directo en tiempos de respuesta al cliente. Ticket padre: GD933-73.</div></div>
-    <div class="priority-item"><span class="prio-num">2</span><div class="prio-text"><strong>Pagos SAI</strong> &#8212; Impacto financiero directo, riesgo de pagos indebidos y doble indemnizaci&#243;n.</div></div>
-    <div class="priority-item"><span class="prio-num">3</span><div class="prio-text"><strong>Fechas SIOS</strong> &#8212; Recurrente, ya fue "solucionado" antes sin &#233;xito (MDSB-756762).</div></div>
-    <div class="priority-item"><span class="prio-num">4</span><div class="prio-text"><strong>Sincronizaci&#243;n</strong> &#8212; Previene categor&#237;as completas de errores futuros.</div></div>
-    <div class="priority-item"><span class="prio-num">5</span><div class="prio-text"><strong>Quick Wins (5-8)</strong> &#8212; Resolver en paralelo con las soluciones principales.</div></div>
+    <div class="priority-item"><span class="prio-num">1</span><div class="prio-text"><strong>Pagos y Estado de Cuenta SAI</strong> &#8212; 16 incidentes, impacto financiero directo. Riesgo de pagos indebidos, doble giro y l&#237;mites incorrectos.</div></div>
+    <div class="priority-item"><span class="prio-num">2</span><div class="prio-text"><strong>Colas de Asignaci&#243;n</strong> &#8212; 8 incidentes, impacto directo en tiempos de respuesta al cliente y SLAs.</div></div>
+    <div class="priority-item"><span class="prio-num">3</span><div class="prio-text"><strong>Fechas SIOS</strong> &#8212; 7 incidentes, recurrente (ya fue "cerrado" antes sin &#233;xito). Bloquea reporte de siniestros.</div></div>
+    <div class="priority-item"><span class="prio-num">4</span><div class="prio-text"><strong>Reversi&#243;n de Terminaci&#243;n</strong> &#8212; 5 incidentes, estados de cuenta corruptos que requieren intervenci&#243;n manual.</div></div>
+    <div class="priority-item"><span class="prio-num">5</span><div class="prio-text"><strong>Novedades SAI (2-2-8)</strong> &#8212; 6 incidentes, bloquea operaciones cr&#237;ticas de cesiones y retiros.</div></div>
+    <div class="priority-item"><span class="prio-num">6</span><div class="prio-text"><strong>Sincronizaci&#243;n de Par&#225;metros</strong> &#8212; 5 incidentes, previene categor&#237;as completas de errores futuros.</div></div>
+    <div class="priority-item"><span class="prio-num">7</span><div class="prio-text"><strong>Infraestructura (Java/VPN)</strong> &#8212; 17 incidentes de volumen pero baja complejidad. Automatizar y documentar.</div></div>
+    <div class="priority-item"><span class="prio-num">8</span><div class="prio-text"><strong>Quick Wins (7, 9-12)</strong> &#8212; Resolver en paralelo: facturaci&#243;n, datacr&#233;dito, reportes, SIOS, Huella.</div></div>
   </div>
 </div>
 
@@ -215,4 +296,5 @@ td.num{font-family:Consolas,monospace;font-size:.85rem;color:var(--text-secondar
 
 </div>
 </body>
+</html>
 </html>
